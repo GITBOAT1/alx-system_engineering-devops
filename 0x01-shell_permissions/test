@@ -1,0 +1,2 @@
+#!bin/bash
+if[[ whoami == "root"]] echo "whoami passed"
