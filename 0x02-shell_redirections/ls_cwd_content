@@ -1,0 +1,44 @@
+total 52
+drwxr-xr-x 2 root root 4096 Aug 23 18:16 .
+drwxr-xr-x 6 root root  121 Aug 23 09:17 ..
+-rwxr--r-- 1 root root   32 Aug 23 09:51 0-hello_world
+-rwxr--r-- 1 root root   28 Aug 23 10:26 1-confused_smiley
+-rwxr--r-- 1 root root   24 Aug 23 10:13 1-confused_smiley~
+-rwxr--r-- 1 root root   29 Aug 23 10:40 2-hellofile
+-rwxr--r-- 1 root root   39 Aug 23 10:52 3-twofiles
+-rwxr--r-- 1 root root   35 Aug 23 11:06 4-lastlines
+-rwxr--r-- 1 root root   35 Aug 23 11:26 5-firstlines
+-rwxr--r-- 1 root root   36 Aug 23 11:51 6-third_line
+-rwxr--r-- 1 root root   36 Aug 23 18:15 8-cwd_state
+-rw-r--r-- 1 root root    0 Aug 23 13:12 *\"Best School"\\*$?*****:)
+-rw-r--r-- 1 root root    0 Aug 23 11:58 \*\'Best School\'\*$\?\*\*\*\*\*:)
+-rw-r--r-- 1 root root    0 Aug 23 12:20 \*\'Best School\'\*$\?\*\*\*\*\*:\)
+-rw-r--r-- 1 root root    0 Aug 23 13:16 \*\\\"Best\ \School\"\\\\\*$\?\*\*\*\*\*:)
+-rw-r--r-- 1 root root    0 Aug 23 12:25 \\*\\Best\ \School'\*$?*****:)
+-rw-r--r-- 1 root root    0 Aug 23 12:18 \*\"Best\ \School"\\*$?*****:)fxv
+-rw-r--r-- 1 root root  655 Aug 23 11:34 iacta
+-rw-r--r-- 1 root root 1338 Aug 23 10:28 less
+-rw-r--r-- 1 root root    0 Aug 23 18:16 ls_cwd_content
+-rw-r--r-- 1 root root   25 Aug 23 09:56 README.md
+total 56
+drwxr-xr-x 2 root root 4096 Aug 23 18:16 .
+drwxr-xr-x 6 root root  121 Aug 23 09:17 ..
+-rwxr--r-- 1 root root   32 Aug 23 09:51 0-hello_world
+-rwxr--r-- 1 root root   28 Aug 23 10:26 1-confused_smiley
+-rwxr--r-- 1 root root   24 Aug 23 10:13 1-confused_smiley~
+-rwxr--r-- 1 root root   29 Aug 23 10:40 2-hellofile
+-rwxr--r-- 1 root root   39 Aug 23 10:52 3-twofiles
+-rwxr--r-- 1 root root   35 Aug 23 11:06 4-lastlines
+-rwxr--r-- 1 root root   35 Aug 23 11:26 5-firstlines
+-rwxr--r-- 1 root root   36 Aug 23 11:51 6-third_line
+-rwxr--r-- 1 root root   36 Aug 23 18:15 8-cwd_state
+-rw-r--r-- 1 root root    0 Aug 23 13:12 *\"Best School"\\*$?*****:)
+-rw-r--r-- 1 root root    0 Aug 23 11:58 \*\'Best School\'\*$\?\*\*\*\*\*:)
+-rw-r--r-- 1 root root    0 Aug 23 12:20 \*\'Best School\'\*$\?\*\*\*\*\*:\)
+-rw-r--r-- 1 root root    0 Aug 23 13:16 \*\\\"Best\ \School\"\\\\\*$\?\*\*\*\*\*:)
+-rw-r--r-- 1 root root    0 Aug 23 12:25 \\*\\Best\ \School'\*$?*****:)
+-rw-r--r-- 1 root root    0 Aug 23 12:18 \*\"Best\ \School"\\*$?*****:)fxv
+-rw-r--r-- 1 root root  655 Aug 23 11:34 iacta
+-rw-r--r-- 1 root root 1338 Aug 23 10:28 less
+-rw-r--r-- 1 root root 1242 Aug 23 18:16 ls_cwd_content
+-rw-r--r-- 1 root root   25 Aug 23 09:56 README.md
