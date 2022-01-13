@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#Bash script that displays Best School 10 times using while
+command=$(ls)
+for i in $command ; do
+    echo "$i" | cut -d '-' -f2
+done

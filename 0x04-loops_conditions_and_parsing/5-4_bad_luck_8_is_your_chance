@@ -6,6 +6,7 @@ bad="bad luck"
 gud="good luck"
 while [ "$i" -lt 10 ]
 do
+        i=$(("$i" + 1))    
     if [ "$i" -eq 4 ]; then
 	echo "$bad"
     elif [ "$i" -eq 8 ]; then
@@ -13,6 +14,5 @@ do
     else
 	echo "$text"
     fi
-    i=$(("$i" + 1))
-    
+
 done

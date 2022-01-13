@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#Bash script that displays Best School 10 times using while
+i="0"
+text="Best School"
+START=1
+END=20
+while (( START <= END ))
+do
+    case $START in
+	5)
+	echo "bad luck from China"
+	;;
+	10)
+	echo "bad luck from Japan"
+	;;
+	18)
+	echo "bad luck from Italy"
+	;;
+    esac
+    echo "$START"
+    ((START = START + 1))
+done
