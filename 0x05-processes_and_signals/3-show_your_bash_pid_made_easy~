@@ -1,3 +1,0 @@
-#!/bin/env bash
-#  A Bash script that displays its own PID.
-pgrep 3-show_your_bash_pid_made_easy
