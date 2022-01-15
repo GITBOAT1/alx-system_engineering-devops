@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 #  A Bash script that displays its own PID.
 while true; do
     echo "To infinity and beyond"
