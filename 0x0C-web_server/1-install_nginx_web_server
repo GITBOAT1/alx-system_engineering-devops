@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# install nginx web server
+# adds Holberton School to index page of web server
+sudo apt-get -y install nginx
+echo "Hello World!" | sudo tee /usr/share/nginx/html/index.html
+
+service nginx start
