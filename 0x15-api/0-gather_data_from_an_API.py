@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-import urllib.request
-import urllib.parse
+""" Gather data from an API """
 import json
 import sys
-""" Gather data from an API """
+import urllib.parse
+import urllib.request
 
 
 def emp(id):
