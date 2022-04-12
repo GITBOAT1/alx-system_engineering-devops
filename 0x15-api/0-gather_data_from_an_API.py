@@ -33,7 +33,7 @@ def emp(id):
                         com = com + 1
                     tks = tks + 1
 
-    print("Employee {} is done with tasks ({}/{}):".format(emp_name, com, tks))
+    print("Employee {} is done with tasks({}/{}):".format(emp_name, com, tks))
     for i in emp_task:
         print("\t", end="")
         print(i)
