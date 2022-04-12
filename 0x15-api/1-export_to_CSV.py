@@ -32,6 +32,3 @@ def main(argv):
 if __name__ == "__main__":
     import sys
     main(sys.argv)
-© 2022 GitHub, Inc.
-Terms
-Privacy
