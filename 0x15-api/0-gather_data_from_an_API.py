@@ -14,13 +14,11 @@ def emp(id):
     todos1 = request_url1.read()
     todos = json.loads(todos1)
     jdata = json.loads(data)
-    
     com = 0
     tks = 0
     emp_task = []
-
-
     emp_name = jdata.get("name")
+
     for j in todos:
         """ stor the title name of the  completed task """
         if j["userId"] == id:
@@ -33,9 +31,7 @@ def emp(id):
     for i in emp_task:
         print("\t", end="")
         print(i)
-    print("\n\n...",emp_name,"....")
 
 
 if __name__ == "__main__":
     emp(int(sys.argv[1]))
-
