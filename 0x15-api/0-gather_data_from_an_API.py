@@ -35,7 +35,8 @@ def emp(id):
 
     print("Employee {} is done with tasks ({}/{}):".format(emp_name, com, tks))
     for i in emp_task:
-        print("\t", i)
+        print("\t", end="")
+        print(i)
 
 
 if __name__ == "__main__":
