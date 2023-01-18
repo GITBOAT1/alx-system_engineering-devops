@@ -11,6 +11,6 @@ backend web_backend
 \tbalance roundrobin
 \toption forwardfor
 \thttp-request set-header X-Forwarded-Port %[dst_port]
-\tserver web-01 44.197.197.248:80 check
-\tserver web-02 44.200.109.104:80 check" | sudo tee -a $FILE
+\tserver web-01 54.237.3.197:80 check
+\tserver web-02 54.152.230.84:80 check" | sudo tee -a $FILE
 sudo service haproxy restart
