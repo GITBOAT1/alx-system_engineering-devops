@@ -36,19 +36,23 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-frontend www-http
-   bind *:80
-   redirect scheme https code 301 if !{ ssl_fc }
-   bind *:443 ssl crt /etc/ssl/www.gregoryjames.website/www.gregoryjames.website.pem
+frontend www-http #-frontend
+	bind *:80
+	redirect scheme https code 301 if !{ ssl_fc }
+	bind *:443 ssl crt /etc/letsencrypt/live/www.alboat.tech/fullchain.pem
 
-   acl letsencrypt-acl path_beg /.well-known/acme-challenge/
-   use_backend letsencrypt-backend if letsencrypt-acl
-   default_backend www-backend
+	acl letsencrypt-acl path_beg /.well-known/acme-challenge/
+   	use_backend letsencrypt-backend if letsencrypt-acl
+   	default_backend www-backend
 
 backend www-backend
-   redirect scheme https if !{ ssl_fc }
-   server www. 44.197.197.248:80 check
-   server www. 44.200.109.104:80 check
+	#mode http
+	#balance roundrobin
+	#option forwardfor
+	redirect scheme https if !{ ssl_fc }
+	#http-request set-header X-Forwarded-Port %[dst_port]
+	server www-1 54.237.3.197:80 check
+	server www-2 54.152.230.84:80 check
 
 backend letsencrypt-backend
     server letsencrypt 127.0.0.1:8888
