@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+if [ $# == 1 ]; then
+    name=$(date '+%Y-%m-%d')
+    sudo mysqldump -u root tyrell_corp > backup.sql | $1
+    tar -zcvf "$name.tar.gz" backup.sql
+    done
