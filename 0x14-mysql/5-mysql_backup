@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# a Bash script that generates a MySQL dump and creates a compressed archive out of it
 if [ $# == 1 ]; then
     name=$(date '+%Y-%m-%d')
     echo $1 | sudo mysqldump -u root tyrell_corp > backup.sql
