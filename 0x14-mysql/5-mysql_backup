@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 if [ $# == 1 ]; then
     name=$(date '+%Y-%m-%d')
