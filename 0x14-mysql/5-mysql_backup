@@ -2,6 +2,6 @@
 
 if [ $# == 1 ]; then
     name=$(date '+%Y-%m-%d')
-    sudo mysqldump -u root tyrell_corp > backup.sql | $1
+    echo $1 | sudo mysqldump -u root tyrell_corp > backup.sql
     tar -zcvf "$name.tar.gz" backup.sql
-    done
+fi
