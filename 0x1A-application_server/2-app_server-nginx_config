@@ -1,0 +1,22 @@
+File Edit Options Buffers Tools Help                                                                                                        
+# Default server configuration
+#
+server {
+        listen 80 default_server;
+        add_header X-Served-By $hostname;
+        #listen [::]:80 default_server;
+
+
+        location /AirBnB_clone_v2 {
+                 alias /home/ubuntu/AirBnB_clone_v2;
+        }
+
+        # pass the directory to Gunicorn
+        location / {
+                 proxy_pass http://localhost:8000;
+                 include /etc/nginx/proxy_params;
+                 proxy_redirect off;
+        }
+
+}
+
