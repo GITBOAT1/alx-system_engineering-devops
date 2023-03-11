@@ -1,6 +1,3 @@
-File Edit Options Buffers Tools Help                                                                                                        
-# Default server configuration
-#
 server {
        listen *:80;
        listen *:8080;
@@ -30,5 +27,15 @@ server {
 		include /etc/nginx/proxy_params;
 		proxy_redirect off;
        }
+       location /airbnb-dynamic/ {
+		 include proxy_params;
+                 proxy_pass http://127.0.0.1:5001/;
+	}
+
+	location /api/ {
+                 include proxy_params;
+                 proxy_pass http://127.0.0.1:5002/api;
+        }
+
        
 }
