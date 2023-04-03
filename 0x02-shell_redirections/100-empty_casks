@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -mpty -printf "%f\n"
